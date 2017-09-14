@@ -1,6 +1,6 @@
 # My configs
 
-Ce repo a pour but de stocker garder mes configs bien au chaud :D
+Ce repo a pour but de garder mes configs bien au chaud :D
 
 Il contient:
 
@@ -9,6 +9,7 @@ Il contient:
 	    code style
 	    templates: composant
 
-## Remarque
+## Remarques
 
-Les configs jetbrains on été faite sur Webstorm 2017.2, il faut donc faire gaff au problème de compatibilité eventuelle ^^
+- Le script n'utilise pas ansible et n'est pas fait pour gérer tout type de version (Ubuntu 16.04)
+- Les configs jetbrains ont été faites sur Webstorm 2017.2, il faut donc faire attention au problème de compatibilité eventuelle ^^
