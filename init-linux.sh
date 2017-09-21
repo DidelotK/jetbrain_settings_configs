@@ -43,7 +43,7 @@ sudo make install
 echo 'eval "$(fasd --init auto)"' >> ${ZDOTDIR:-$HOME}/.zshrc
 
 # Installation des paquets nécessaires pour travailler
-sudo apt-get install -y emacs terminator tree ansible
+sudo apt-get install -y emacs terminator tree vagrant ansible
 
 # Téléchargement de la toolbox jetbrains
 cd ~/Softwares
