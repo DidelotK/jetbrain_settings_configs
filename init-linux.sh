@@ -26,7 +26,7 @@ echo '
 alias emacs="emacs -nw"
 alias O="nautilus ."
 alias C="clear"                                                                                                                               
-alias ni="npm install"                                                                                                                        
+alias ni="npm install"                                                     
 alias ns="npm start"                                                                                                                          
 alias nis="npm install && npm start"                                                                                                          
 ' >> ${ZDOTDIR:-$HOME}/.zshrc
@@ -37,6 +37,7 @@ echo 'source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh' >> 
 #Installation de fasd
 cd ~/Softwares
 git clone https://github.com/clvv/fasd.git
+cd ~/Softwares/fasd
 sudo make install
 
 # Ajout du lancement automatique de fasd lors du lancement du terminal
@@ -62,7 +63,7 @@ sudo npm i -g nvm
 sudo apt-get install \
     apt-transport-https \
     ca-certificates \
-    software-properties-common
+    software-properties-common -y
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
 sudo add-apt-repository \
@@ -72,7 +73,7 @@ sudo add-apt-repository \
 
 sudo apt-get update
 
-sudo apt-get install docker-ce
+sudo apt-get install docker-ce -y
 
 #Installation de docker-compose
 sudo curl -L https://github.com/docker/compose/releases/download/1.16.1/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
