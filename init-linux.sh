@@ -32,7 +32,7 @@ alias nis="npm install && npm start"
 ' >> ${ZDOTDIR:-$HOME}/.zshrc
 
 # Ajout du lancement automatique de la coloration synthaxique lors du lancement du terminal
-echo 'source ${(q-)PWD}/Softwares/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh' >> ${ZDOTDIR:-$HOME}/.zshrc
+echo 'source /home/${whoami}/Softwares/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh' >> ${ZDOTDIR:-$HOME}/.zshrc
 
 #Installation de fasd
 cd ~/Softwares
